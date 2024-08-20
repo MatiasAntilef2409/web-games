@@ -1,0 +1,14 @@
+.link {
+  width: 100%;
+  margin: 0 auto;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: 2px solid orange;
+  border-radius: 1rem;
+  font-size: 2rem;
+
+  &:hover {
+    color: orangered;
+    border: 2px solid orangered;
+  }
+}

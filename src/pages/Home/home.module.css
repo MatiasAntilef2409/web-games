@@ -1,0 +1,82 @@
+.container {
+  width: 100%;
+  background-color: var(--color3);
+  padding-bottom: 5rem;
+}
+
+.container_filters {
+  height: 60vh;
+  width: 100%;
+  background: url("/bggames2.webp");
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: none;
+
+  & input,
+  select,
+  button {
+    height: 80px;
+    border-radius: 1rem;
+    outline: none;
+    padding: 0 1.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  & input {
+    width: 70%;
+    border: none;
+  }
+
+  & select {
+    max-width: 200px;
+    min-width: 150px;
+    border: none;
+  }
+}
+
+.container_cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 5rem 0;
+  justify-content: space-around;
+}
+.button_confirm_params {
+  border: 2px orange solid;
+  background: var(--negro);
+  color: var(--orange2);
+
+  &:hover {
+    color: orangered;
+    border: 2px orangered solid;
+  }
+}
+
+.buttons_page {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 6rem;
+
+  & .button_page {
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid orange;
+    cursor: pointer;
+    height: 100px;
+
+    &:hover {
+      color: orangered;
+      border: 1px solid orangered;
+    }
+  }
+}
