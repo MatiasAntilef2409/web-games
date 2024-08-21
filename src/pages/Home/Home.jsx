@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Card from "../../components/Card/Card";
-import UseFetch from "../../hooks/useFetch";
+import UseFetch from "../../hooks/UseFetch";
 import styles from "./home.module.css";
 import Modal from "../../components/Modal/Modal";
 import { IconArrowUp } from "../../components/icon/IconsSVG";
