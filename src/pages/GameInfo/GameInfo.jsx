@@ -54,35 +54,37 @@ function GameInfo() {
           />
         )}
       </section>
-      <div className={styles.carousel}>
-        {images &&
-          images.results.map((image, idx) => (
-            <img
-              key={image.id}
-              src={image.image}
-              className={
-                page === idx
-                  ? styles.screenshots
-                  : `${styles.screenshots} ${styles.hidden}`
-              }
-            />
-          ))}
-        <span className={styles.indicators}>
+      <div className={styles.carousel_container}>
+        <div className={styles.carousel}>
           {images &&
-            images.results.map((_, idx) => (
-              <button
-                key={idx}
-                onClick={() => {
-                  setPage(idx);
-                }}
+            images.results.map((image, idx) => (
+              <img
+                key={image.id}
+                src={image.image}
                 className={
                   page === idx
-                    ? `${styles.indicator} ${styles.indicator_select}`
-                    : styles.indicator
+                    ? styles.screenshots
+                    : `${styles.screenshots} ${styles.hidden}`
                 }
-              ></button>
+              />
             ))}
-        </span>
+          <span className={styles.indicators}>
+            {images &&
+              images.results.map((_, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => {
+                    setPage(idx);
+                  }}
+                  className={
+                    page === idx
+                      ? `${styles.indicator} ${styles.indicator_select}`
+                      : styles.indicator
+                  }
+                ></button>
+              ))}
+          </span>
+        </div>
       </div>
     </div>
   );

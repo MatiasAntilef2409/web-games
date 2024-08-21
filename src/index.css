@@ -38,6 +38,7 @@ h4 {
 p {
   font-size: 1.3rem;
   color: whitesmoke;
+  max-width: 100ch;
 }
 
 ul,
